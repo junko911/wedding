@@ -1,0 +1,24 @@
+#wrapper {
+    display: grid;
+}
+
+#hero {
+    background-image: url(https://weddingday.jp/wp/wp-content/themes/weddingday/images/desktop_1.jpg);
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+#features {
+    display: grid;
+}
+
+@media screen and (min-width: 500px) {
+    #features {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    #hero {
+        min-height: 300px; 
+    }
+}
